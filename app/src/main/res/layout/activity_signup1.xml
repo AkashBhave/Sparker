@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.akashbhave.sparker.Signup1Activity"
+    android:background="#C8E6C9">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@raw/banner_reg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bannerIV" />
+
+    <TextView
+        android:text="Sign up for a Sparker account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoTV"
+        android:textColor="#212121"
+        android:textIsSelectable="false"
+        android:textAllCaps="false"
+        android:gravity="center_horizontal"
+        android:textSize="21sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/bannerIV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Name login field -->
+
+    <!-- Email address login field -->
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@raw/number1"
+        android:id="@+id/number1IV"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/infoTV"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_et"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email_white_24dp"
+        android:drawablePadding="25dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Email Address"
+        android:layout_below="@+id/nameET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/emailET"
+        android:layout_marginTop="10dp" />
+
+    <!-- Password login field -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_et"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password_white_24dp"
+        android:drawablePadding="25dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Password"
+        android:id="@+id/passwordET"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/emailET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_et"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_name_white_24dp"
+        android:drawablePadding="25dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Full Name"
+        android:id="@+id/nameET"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/number1IV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/next1BT"
+        android:layout_below="@+id/passwordET"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_login_bt"
+        android:onClick="sendNext1" />
+
+</RelativeLayout>
